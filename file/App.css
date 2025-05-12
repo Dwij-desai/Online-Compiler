@@ -1,0 +1,99 @@
+/* Base Styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e;
+  color: #f3f3f3;
+}
+
+/* Main App Container */
+.App {
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Title */
+.App h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 5px solid #007acc;
+  padding-left: 10px;
+}
+
+/* Language and Submit Buttons */
+.language-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.language-buttons button {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #ddd;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+
+.language-buttons button:hover {
+  background-color: #3a3a3a;
+}
+
+.language-buttons .selected {
+  background-color: #007acc;
+  color: #fff;
+  border-color: #007acc;
+  font-weight: bold;
+}
+
+.language-buttons .submit-btn {
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.language-buttons .submit-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Code Editor */
+.monaco-editor {
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Output Section */
+.output-section {
+  background-color: #252526;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-family: Consolas, monospace;
+}
+
+.output-section h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.output-section pre {
+  white-space: pre-wrap;
+  margin: 0;
+  font-size: 14px;
+}
